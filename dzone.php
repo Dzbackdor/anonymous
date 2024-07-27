@@ -12,13 +12,18 @@ function download_content($url, $local_file) {
     }
 }
 
-if (!file_exists($local_file) || filesize($local_file) === 0) {
-    // Attempt to download content if file does not exist or is empty
+function check_and_download($url, $local_file) {
     if (file_exists($local_file)) {
-        unlink($local_file); // Delete the file if it exists and is empty
+        if (filesize($local_file) === 0) {
+            unlink($local_file);
+            download_content($url, $local_file);
+        }
+    } else {
+        download_content($url, $local_file);
     }
-    download_content($url, $local_file);
 }
 
+check_and_download($url, $local_file);
+
 include $local_file;
-?>
+?> 
